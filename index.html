@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>toytoynoroyal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Offizielle Homepage von toytoynoroyal – VR, Unity & AI Experimente.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">toytoynoroyal</h1>
+            <nav class="nav">
+                <a href="#about">Über mich</a>
+                <a href="#projects">Projekte</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>VR, Unity & AI – mein Spielplatz</h2>
+                <p>
+                    Willkommen auf toytoynoroyal. Hier sammle ich meine Experimente mit Unity,
+                    Multiplayer-VR, Meta Quest 3, PSVR2 und eigenen AI-Bots.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h3>Über toytoynoroyal</h3>
+                <p>
+                    Ich bin Softwareentwickler mit Fokus auf Unity, VR und AI-Integration.
+                    Aktuell arbeite ich an einem VR-Workroom mit einem eigenen AI-Karma-Bot.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h3>Projekte</h3>
+                <ul class="project-list">
+                    <li>
+                        <h4>VR Workroom mit Karma-Bot</h4>
+                        <p>
+                            Ein gemeinsamer VR-Arbeitsraum, in dem ein AI-gesteuerter Planet (Karma)
+                            über ein lokales Flask/Ollama-Backend mit den Usern interagiert.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Multiplayer-VR Experimente</h4>
+                        <p>
+                            Tests mit Unity Netcode, Relay und verschiedenen Headsets wie Meta Quest 3
+                            und PSVR2, um nahtlose Zusammenarbeit in VR zu ermöglichen.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h3>Kontakt</h3>
+                <p>
+                    Du willst mit mir an VR- oder AI-Projekten arbeiten oder Feedback geben?
+                    Schreib mir gerne über GitHub Issues in diesem Repository.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> toytoynoroyal</p>
+        </div>
+    </footer>
+
+    <script>
+        // Setzt automatisch das aktuelle Jahr im Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
